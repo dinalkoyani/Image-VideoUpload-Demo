@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LoginActivity"
+    android:layout_gravity="center"
+    android:layout_margin="15dp">
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Email"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColorHint="@color/purple_500"
+        android:backgroundTint="@color/purple_500"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        android:hint="Password"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColorHint="@color/purple_500"
+        android:backgroundTint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/txtNotAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:text="Don't have an account? \n Please Signup!"
+        android:textColor="@color/purple_500"
+        android:padding="8dp"
+        android:gravity="center"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
